@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детальна інформація про процесор</title>
+    <link rel="stylesheet" href="/css/processor.css">
+</head>
+<body>
+    <header>
+        <h1>Мультимедійна енциклопедія сучасних мікропроцесорів</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li class="nav-main"><a href="main.html">Головна</a></li>
+                <li class="nav-about"><a href="#">Про енциклопедію</a></li>
+                <li class="nav-glossary"><a href="#">Глосарій</a></li>
+                <li class="nav-literature"><a href="#">Список літератури</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <a id="back-to-list" href="main.html"> ⇦ </a>
+
+    <div class="container">
+        <div class="content">
+            <div class="image-block">
+                <img id="processor-image" src="">
+            </div>
+            <div class="description-block">
+                <h2 id="processor-name"></h2>
+                <div class="detailed-description">
+                    <p><strong>Набір команд:</strong> <span id="processor-instruction-set"></span></p>
+                    <p><strong>Кількість ядер:</strong> <span id="processor-cores"></span></p>
+                    <p><strong>Виробник:</strong> <span id="processor-manufacturer"></span></p>
+                    <p><strong>Тактова частота (ГГц):</strong> <span id="processor-frequency"></span></p>
+                    <p><strong>Опис:</strong> <span id="processor-description"></span></p>
+                </div>
+            </div>
+
+        </div>
+        <div class="processor-video">
+            <iframe id="processor-iframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="/js/data.js"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

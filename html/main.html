@@ -1,24 +1,88 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Основна сторінка</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Мультимедійна енциклопедія мікропроцесорів</title>
+    <link rel="stylesheet" href="/css/main.css">
 </head>
+
 <body>
+
     <header>
         <h1>Мультимедійна енциклопедія сучасних мікропроцесорів</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li class="nav-main"><a href="main.html">Головна</a></li>
+                <li class="nav-about"><a href="#">Про енциклопедію</a></li>
+                <li class="nav-glossary"><a href="#">Глосарій</a></li>
+                <li class="nav-literature"><a href="#">Список літератури</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Зміст</a></li>
-            <li><a href="#">Глосарій</a></li>
-            <li><a href="#">Список літератури</a></li>
-        </ul>
-    </nav>
-    <main>
-        <p>Основний вміст енциклопедії...</p>
-    </main>
+
+    <div class="content">
+
+        <div class="filters-wrapper">
+            <div class="filters">
+                <h2>Фільтри</h2>
+                <form id="filter-form">
+
+                    <label for="processor-name">Назва процесора:</label>
+                    <input type="text" id="processor-name" placeholder="Пошук за назвою процесора">
+
+                    <label for="manufacturer">Виробник:</label>
+                    <select id="manufacturer">
+                        <option value="all">Усі</option>
+                        <option value="Intel">Intel</option>
+                        <option value="AMD">AMD</option>
+                        <option value="Apple">Apple</option>
+                    </select>
+
+                    <label for="instruction-set">Набір команд:</label>
+                    <select id="instruction-set">
+                        <option value="all">Усі</option>
+                        <option value="CISC">CISC</option>
+                        <option value="RISC">RISC</option>
+                    </select>
+
+                    <label for="cores">Мінімальна кількість ядер:</label>
+                    <select id="cores">
+                        <option value="all">Усі</option>
+                        <option value="2">1</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="8">8</option>
+                        <option value="16">16</option>
+                    </select>
+
+                    <label for="frequency">Тактова частота:</label>
+                    <select id="frequency">
+                        <option value="all">Усі</option>
+                        <option value="1">до 1 ГГц</option>
+                        <option value="2">до 2 ГГц</option>
+                        <option value="3">до 3 ГГц</option>
+                        <option value="4">до 4 ГГц</option>
+                        <option value="5">до 5 ГГц</option>
+                        <option value="6">до 6 ГГц</option>
+                    </select>
+
+                    <button type="button" id="filter-button">Фільтрувати</button>
+                    <a href="main.html" id="restore-filters">Скинути фільтри</a>
+                </form>
+            </div>
+        </div>
+
+        <div class="main-content-wrapper">
+            <div class="main-content">
+                <div class="processors-list">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/data.js"></script>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>

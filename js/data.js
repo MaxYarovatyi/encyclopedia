@@ -1,0 +1,222 @@
+const processors = [
+    {
+        id: 1,
+        name: "Intel Core i9-11900K",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 8,
+        manufacturer: "Intel",
+        frequency: 5.3,
+        description: ""
+    },
+    {
+        id: 2,
+        name: "AMD Ryzen 9 5900X",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 12,
+        manufacturer: "AMD",
+        frequency: 4.8,
+        description: ""
+    },
+    {
+        id: 3,
+        name: "Intel Core i7-10700K",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 8,
+        manufacturer: "Intel",
+        frequency: 5.1,
+        description: ""
+    },
+    {
+        id: 4,
+        name: "AMD Ryzen 7 5800X",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 8,
+        manufacturer: "AMD",
+        frequency: 4.7,
+        description: ""
+    },
+    {
+        id: 5,
+        name: "Intel Core i5-10600K",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 6,
+        manufacturer: "Intel",
+        frequency: 4.8,
+        description: ""
+    },
+    {
+        id: 6,
+        name: "AMD Ryzen 5 5600X",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 6,
+        manufacturer: "AMD",
+        frequency: 4.6,
+        description: ""
+    },
+    {
+        id: 7,
+        name: "Intel Core i9-10900K",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 10,
+        manufacturer: "Intel",
+        frequency: 5.3,
+        description: ""
+    },
+    {
+        id: 8,
+        name: "AMD Ryzen 9 3950X",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 16,
+        manufacturer: "AMD",
+        frequency: 4.7,
+        description: ""
+    },
+    {
+        id: 9,
+        name: "Intel Core i7-11700K",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 8,
+        manufacturer: "Intel",
+        frequency: 5.0,
+        description: ""
+    },
+    {
+        id: 10,
+        name: "AMD Ryzen 7 3700X",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 8,
+        manufacturer: "AMD",
+        frequency: 4.4,
+        description: ""
+    },
+    {
+        id: 11,
+        name: "Intel Core i5-10400F",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 6,
+        manufacturer: "Intel",
+        frequency: 4.3,
+        description: ""
+    },
+    {
+        id: 12,
+        name: "AMD Ryzen 5 3600X",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 6,
+        manufacturer: "AMD",
+        frequency: 4.4,
+        description: ""
+    },
+    {
+        id: 13,
+        name: "Intel Core i3-10100",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 4,
+        manufacturer: "Intel",
+        frequency: 4.3,
+        description: ""
+    },
+    {
+        id: 14,
+        name: "AMD Ryzen 3 3300X",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 4,
+        manufacturer: "AMD",
+        frequency: 4.3,
+        description: ""
+    },
+    {
+        id: 15,
+        name: "Intel Core i9-11900KF",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 8,
+        manufacturer: "Intel",
+        frequency: 5.3,
+        description: ""
+    },
+    {
+        id: 16,
+        name: "AMD Ryzen 9 5900",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 12,
+        manufacturer: "AMD",
+        frequency: 4.7,
+        description: ""
+    },
+    {
+        id: 17,
+        name: "Intel Core i7-11700KF",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 8,
+        manufacturer: "Intel",
+        frequency: 5.0,
+        description: ""
+    },
+    {
+        id: 18,
+        name: "AMD Ryzen 7 5800",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 8,
+        manufacturer: "AMD",
+        frequency: 4.6,
+        description: ""
+    },
+    {
+        id: 19,
+        name: "Intel Core i5-11400F",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 6,
+        manufacturer: "Intel",
+        frequency: 4.4,
+        description: ""
+    },
+    {
+        id: 20,
+        name: "AMD Ryzen 5 3500X",
+        image: "",
+        video: "",
+        instructionSet: "CISC",
+        cores: 6,
+        manufacturer: "AMD",
+        frequency: 4.1,
+        description: ""
+    }
+];
