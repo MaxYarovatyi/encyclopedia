@@ -47,9 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const filteredProcessors = processors.filter(processor => {
             return (name === 'all' || processor.name.includes(name)) &&
                    (instructionSet === 'all' || processor.instructionSet === instructionSet) &&
-                   (cores === 'all' || processor.cores > cores) &&
+                   (cores === 'all' || processor.cores >= cores) &&
                    (manufacturer === 'all' || processor.manufacturer === manufacturer) &&
-                   (frequency === 'all' || processor.frequency < frequency);
+                   (frequency === 'all' || processor.frequency <= frequency);
         });
 
         displayProcessors(filteredProcessors, filters);
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('processor-cores').textContent = processor.cores;
         document.getElementById('processor-manufacturer').textContent = processor.manufacturer;
         document.getElementById('processor-frequency').textContent = processor.frequency;
-        document.getElementById('processor-description').textContent = processor.description;
+        document.getElementById('processor-description').innerHTML = processor.description;
         document.getElementById('processor-iframe').src = processor.video;
 
         const name = urlParams.get('name') || 'all';

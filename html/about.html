@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про енциклопедію</title>
+    <link rel="stylesheet" href="/css/about.css">
+</head>
+<body>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+    <header>
+        <h1>Мультимедійна енциклопедія сучасних мікропроцесорів</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li class="nav-main"><a href="main.html">Головна</a></li>
+                <li class="nav-about"><a href="about.html">Про енциклопедію</a></li>
+                <li class="nav-glossary"><a href="glossary.html">Глосарій</a></li>
+                <li class="nav-literature"><a href="literature.html">Список літератури</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="text-header">Про мультимедійну енциклопедію</h1>
+        <div class="content">
+            <div class="text-block-1">
+                <p>Мультимедійна енциклопедія являє собою програмний продукт, в якому можна ознайомитись із найпопулярнішими моделями сучасних <a class="to-glossary" href="glossary.html#cpu">мікропроцесорів</a>. У енциклопедії представлений каталог із значної кількості екземплярів, кожен з яких володіє своїми унікальними характеристиками. Ці характеристики можна оглянути на міні-картках процесорів на головній сторінці, а для доступу до повної інформації про процесор, необхідно натиснути кнопку «детальніше» на екземплярі що зацікавив.</p>
+                <p>Також, для більшої зручності, у енциклопедію було додано систему пошукових фільтрів. Панель фільтрів знаходиться зліва на головній сторінці енциклопедії. У ній є можливість як пошуку процесорів за назвою, так і за іншими характеристиками:</p>
+                <p>-	Виробник: показує процесори розроблені тільки конкретним вибраним виробником;</p>
+                <p>-	<a class="to-glossary" href="glossary.html#instruction-set">Набір команд</a>: показує процесори із одним із двох можливих наборів команд: <a class="to-glossary" href="glossary.html#RISC">RISC</a> або <a class="to-glossary" href="glossary.html#CISC">CISC</a>;</p>
+                <p>-	Мінімальна кількість <a class="to-glossary" href="glossary.html#core">ядер</a>: показує процесори, що містять більшу або рівну кількість ядер, зазначених в полі;</p>
+                <p>-    <a class="to-glossary" href="glossary.html#frequency">Тактова частота</a>: показує процесори, що містять менше або рівне значення тактової частоти, зазначеної в полі;</p>
+                <p>Завдяки описаним фільтрам, пошук потрібного мікропроцесора не викликає жодних труднощів. На сторінці детальної інформації про процесор, можна переглянути відео про конкретну модель або її <a class="to-glossary" href="glossary.html#family">сімейство</a>, а також, прочитати детальний опис екземпляра, де перелічені особливості обраного процесора: його <a class="to-glossary" href="glossary.html#tprocess">технологічний процес</a>, наявність технології <a class="to-glossary" href="glossary.html#hyper-threading">Hyper-threading</a>, <a class="to-glossary" href="glossary.html#socket">роз'єм</a> для підключення і т. д.</p>
+            </div>
+            <div class="model-class">
+                <model-viewer class="glb-model" src="../img/cpu.glb" alt="3D модель мікропроцесора" auto-rotate camera-controls></model-viewer>
+                <p>На даній 3D моделі зображено типовий настільний мікропроцесор компанії AMD, а саме AMD Ryzen 7 5700X, що містить 8 ядер, 16 <a class="to-glossary" href="glossary.html#thread">потоків</a> та має базову тактову частоту 3.4 ГГц та максимальну 4.6 ГГц.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

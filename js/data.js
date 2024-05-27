@@ -2,221 +2,331 @@ const processors = [
     {
         id: 1,
         name: "Intel Core i9-11900K",
-        image: "",
-        video: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Intel_Core_i9_%2811th_generation%2C_logo%29.svg/800px-Intel_Core_i9_%2811th_generation%2C_logo%29.svg.png",
+        video: "https://www.youtube.com/embed/-WLasmCVDog?si=1D6slCl3LMVmg_8q",
         instructionSet: "CISC",
         cores: 8,
         manufacturer: "Intel",
         frequency: 5.3,
-        description: ""
+        description: 'Процесори Intel сімейства Core i9 являють собою високопродуктивні <a href="glossary.html#cpu">мікропроцесори</a>, оптимізовані для вимогливих обчислювальних задач, характерних для ентузіастів, геймерів та професійних користувачів. Ці процесори, виготовлені за передовими техпроцесами, забезпечують відмінну продуктивність завдяки високій тактовій частоті, великій кількості обчислювальних ядер та підтримці багатопоточності (<a href="glossary.html#hyper-threading">Hyper-Threading</a>). Технології, вбудовані в Core i9, забезпечують підвищену енергоефективність та теплову оптимізацію, що дозволяє використовувати їх у високопродуктивних робочих станціях і геймерських системах.'
     },
     {
         id: 2,
         name: "AMD Ryzen 9 5900X",
-        image: "",
-        video: "",
+        image: "https://en.wikichip.org/w/images/thumb/0/01/amd_ryzen_9_logo.png/1014px-amd_ryzen_9_logo.png",
+        video: "https://www.youtube.com/embed/E1oCGpZ1mv0?si=FHmwT8gN0HHAZMnd",
         instructionSet: "CISC",
         cores: 12,
         manufacturer: "AMD",
         frequency: 4.8,
-        description: ""
+        description: 'Процесори AMD сімейства Ryzen 9 — це високопродуктивні мікропроцесори, призначені для ентузіастів, геймерів та професіоналів, які потребують максимальної обчислювальної потужності. Вони мають велику кількість <a href="glossary.html#core">ядер</a> і <a href="glossary.html#thread">потоків</a>, високу <a href="glossary.html#frequency">тактову частоту</a> та підтримують технології багатопоточності та автоматичного розгону (Precision Boost). Ryzen 9 відзначаються видатною продуктивністю у важких завданнях, таких як 3D-рендеринг, відеомонтаж, наукові обчислення та ігри. Завдяки передовим <a href="glossary.html#tprocess">техпроцесам</a> і архітектурі Zen, ці процесори забезпечують ефективне енергоспоживання та теплову оптимізацію, що робить їх ідеальними для високопродуктивних систем.'
     },
     {
         id: 3,
         name: "Intel Core i7-10700K",
-        image: "",
-        video: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Intel_Core_i7_2020_logo.svg/800px-Intel_Core_i7_2020_logo.svg.png",
+        video: "https://www.youtube.com/embed/rzkYj4zGKMU?si=a4ABYLeRm_1Ho-Cw",
         instructionSet: "CISC",
         cores: 8,
         manufacturer: "Intel",
         frequency: 5.1,
-        description: ""
+        description: 'Процесори Intel <a href="glossary.html#family">сімейства</a> Core i7 — це потужні мікропроцесори, розроблені для високопродуктивних обчислювальних задач. Вони відзначаються високою <a href="glossary.html#frequency">тактовою частотою</a>, великою кількістю ядер та підтримкою технології <a href="glossary.html#hyper-threading">Hyper-Threading</a>, що дозволяє ефективно виконувати багатозадачність. Core i7 ідеально підходять для вимогливих додатків, таких як геймінг, відеомонтаж та 3D-моделювання. Завдяки передовим техпроцесам і оптимізації енергоефективності, ці процесори забезпечують стабільну продуктивність і теплову ефективність для десктопів і ноутбуків.'
     },
     {
         id: 4,
         name: "AMD Ryzen 7 5800X",
-        image: "",
-        video: "",
+        image: "https://en.wikichip.org/w/images/4/4e/amd_ryzen_7_logo.png",
+        video: "https://www.youtube.com/embed/_Yrjo4rZgjs?si=IfDZScY0UEBlcCfr",
         instructionSet: "CISC",
         cores: 8,
         manufacturer: "AMD",
         frequency: 4.7,
-        description: ""
+        description: 'Процесори AMD сімейства Ryzen 7 — це потужні <a href="glossary.html#cpu">мікропроцесори</a>, оптимізовані для високопродуктивних завдань. Вони мають велику кількість ядер і потоків, високу <a href="glossary.html#frequency">тактову частоту</a> та підтримку багатопоточності. Ryzen 7 підходять для інтенсивного геймінгу, відеомонтажу, 3D-рендерингу та інших вимогливих додатків. Завдяки ефективній архітектурі Zen, ці процесори забезпечують відмінну продуктивність і енергоефективність для десктопів і ноутбуків.'
     },
     {
         id: 5,
         name: "Intel Core i5-10600K",
-        image: "",
-        video: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Intel_Core_i5_2020_logo.svg",
+        video: "https://www.youtube.com/embed/ocvEVZFq088?si=Im3eZRMwHgCKCOiC",
         instructionSet: "CISC",
         cores: 6,
         manufacturer: "Intel",
         frequency: 4.8,
-        description: ""
+        description: 'Процесори Intel <a href="glossary.html#family">сімейства</a> Core i5 — це універсальні мікропроцесори, які забезпечують відмінний баланс між продуктивністю та ціною. Вони мають високу <a href="glossary.html#frequency">тактову частоту</a>, оптимальну кількість <a href="glossary.html#core">ядер</a> та підтримують технологію Turbo Boost для динамічного збільшення продуктивності. Core i5 підходять для більшості користувацьких задач, включаючи геймінг, роботу з мультимедіа, офісні програми та легкі обчислювальні завдання. Завдяки своїй енергоефективності та надійності, ці процесори є популярним вибором для десктопів і ноутбуків середнього рівня.'
     },
     {
         id: 6,
         name: "AMD Ryzen 5 5600X",
-        image: "",
-        video: "",
+        image: "https://en.wikichip.org/w/images/a/a0/amd_ryzen_5_logo.png",
+        video: "https://www.youtube.com/embed/NTFHmwJoMT0?si=HddTDZ-LHIpKdkuB",
         instructionSet: "CISC",
         cores: 6,
         manufacturer: "AMD",
         frequency: 4.6,
-        description: ""
+        description: 'Процесори AMD сімейства Ryzen 5 — це універсальні мікропроцесори середнього класу з шістьма або вісьмома <a href="glossary.html#core">ядрами</a> та підтримкою багатопоточності. Вони використовують архітектуру Zen для оптимізації енергоспоживання та теплової продуктивності. Ryzen 5 забезпечують високу <a href="glossary.html#frequency">тактову частоту</a> і покращену пропускну здатність пам`яті, ідеально підходять для ігор, мультимедіа, офісних додатків та програмування, пропонуючи високу продуктивність за доступною ціною.'
     },
     {
         id: 7,
         name: "Intel Core i9-10900K",
-        image: "",
-        video: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Intel_Core_i9_%2811th_generation%2C_logo%29.svg/800px-Intel_Core_i9_%2811th_generation%2C_logo%29.svg.png",
+        video: "https://www.youtube.com/embed/-WLasmCVDog?si=1D6slCl3LMVmg_8q",
         instructionSet: "CISC",
         cores: 10,
         manufacturer: "Intel",
         frequency: 5.3,
-        description: ""
+        description: 'Процесори Intel сімейства Core i9 являють собою високопродуктивні <a href="glossary.html#cpu">мікропроцесори</a>, оптимізовані для вимогливих обчислювальних задач, характерних для ентузіастів, геймерів та професійних користувачів. Ці процесори, виготовлені за передовими техпроцесами, забезпечують відмінну продуктивність завдяки високій тактовій частоті, великій кількості обчислювальних ядер та підтримці багатопоточності (<a href="glossary.html#hyper-threading">Hyper-Threading</a>). Технології, вбудовані в Core i9, забезпечують підвищену енергоефективність та теплову оптимізацію, що дозволяє використовувати їх у високопродуктивних робочих станціях і геймерських системах.'
     },
     {
         id: 8,
         name: "AMD Ryzen 9 3950X",
-        image: "",
-        video: "",
+        image: "https://en.wikichip.org/w/images/thumb/0/01/amd_ryzen_9_logo.png/1014px-amd_ryzen_9_logo.png",
+        video: "https://www.youtube.com/embed/E1oCGpZ1mv0?si=FHmwT8gN0HHAZMnd",
         instructionSet: "CISC",
         cores: 16,
         manufacturer: "AMD",
         frequency: 4.7,
-        description: ""
+        description: 'Процесори AMD сімейства Ryzen 9 — це високопродуктивні мікропроцесори, призначені для ентузіастів, геймерів та професіоналів, які потребують максимальної обчислювальної потужності. Вони мають велику кількість <a href="glossary.html#core">ядер</a> і <a href="glossary.html#thread">потоків</a>, високу <a href="glossary.html#frequency">тактову частоту</a> та підтримують технології багатопоточності та автоматичного розгону (Precision Boost). Ryzen 9 відзначаються видатною продуктивністю у важких завданнях, таких як 3D-рендеринг, відеомонтаж, наукові обчислення та ігри. Завдяки передовим <a href="glossary.html#tprocess">техпроцесам</a> і архітектурі Zen, ці процесори забезпечують ефективне енергоспоживання та теплову оптимізацію, що робить їх ідеальними для високопродуктивних систем.'
     },
     {
         id: 9,
         name: "Intel Core i7-11700K",
-        image: "",
-        video: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Intel_Core_i7_2020_logo.svg/800px-Intel_Core_i7_2020_logo.svg.png",
+        video: "https://www.youtube.com/embed/rzkYj4zGKMU?si=a4ABYLeRm_1Ho-Cw",
         instructionSet: "CISC",
         cores: 8,
         manufacturer: "Intel",
         frequency: 5.0,
-        description: ""
+        description: 'Процесори Intel <a href="glossary.html#family">сімейства</a> Core i7 — це потужні мікропроцесори, розроблені для високопродуктивних обчислювальних задач. Вони відзначаються високою <a href="glossary.html#frequency">тактовою частотою</a>, великою кількістю ядер та підтримкою технології <a href="glossary.html#hyper-threading">Hyper-Threading</a>, що дозволяє ефективно виконувати багатозадачність. Core i7 ідеально підходять для вимогливих додатків, таких як геймінг, відеомонтаж та 3D-моделювання. Завдяки передовим техпроцесам і оптимізації енергоефективності, ці процесори забезпечують стабільну продуктивність і теплову ефективність для десктопів і ноутбуків.'
     },
     {
         id: 10,
         name: "AMD Ryzen 7 3700X",
-        image: "",
-        video: "",
+        image: "https://en.wikichip.org/w/images/4/4e/amd_ryzen_7_logo.png",
+        video: "https://www.youtube.com/embed/_Yrjo4rZgjs?si=IfDZScY0UEBlcCfr",
         instructionSet: "CISC",
         cores: 8,
         manufacturer: "AMD",
         frequency: 4.4,
-        description: ""
+        description: 'Процесори AMD сімейства Ryzen 7 — це потужні <a href="glossary.html#cpu">мікропроцесори</a>, оптимізовані для високопродуктивних завдань. Вони мають велику кількість ядер і потоків, високу <a href="glossary.html#frequency">тактову частоту</a> та підтримку багатопоточності. Ryzen 7 підходять для інтенсивного геймінгу, відеомонтажу, 3D-рендерингу та інших вимогливих додатків. Завдяки ефективній архітектурі Zen, ці процесори забезпечують відмінну продуктивність і енергоефективність для десктопів і ноутбуків.'
     },
     {
         id: 11,
         name: "Intel Core i5-10400F",
-        image: "",
-        video: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Intel_Core_i5_2020_logo.svg",
+        video: "https://www.youtube.com/embed/ocvEVZFq088?si=Im3eZRMwHgCKCOiC",
         instructionSet: "CISC",
         cores: 6,
         manufacturer: "Intel",
         frequency: 4.3,
-        description: ""
+        description: 'Процесори Intel <a href="glossary.html#family">сімейства</a> Core i5 — це універсальні мікропроцесори, які забезпечують відмінний баланс між продуктивністю та ціною. Вони мають високу <a href="glossary.html#frequency">тактову частоту</a>, оптимальну кількість <a href="glossary.html#core">ядер</a> та підтримують технологію Turbo Boost для динамічного збільшення продуктивності. Core i5 підходять для більшості користувацьких задач, включаючи геймінг, роботу з мультимедіа, офісні програми та легкі обчислювальні завдання. Завдяки своїй енергоефективності та надійності, ці процесори є популярним вибором для десктопів і ноутбуків середнього рівня.'
     },
     {
         id: 12,
         name: "AMD Ryzen 5 3600X",
-        image: "",
-        video: "",
+        image: "https://en.wikichip.org/w/images/a/a0/amd_ryzen_5_logo.png",
+        video: "https://www.youtube.com/embed/NTFHmwJoMT0?si=HddTDZ-LHIpKdkuB",
         instructionSet: "CISC",
         cores: 6,
         manufacturer: "AMD",
         frequency: 4.4,
-        description: ""
+        description: 'Процесори AMD сімейства Ryzen 5 — це універсальні мікропроцесори середнього класу з шістьма або вісьмома <a href="glossary.html#core">ядрами</a> та підтримкою багатопоточності. Вони використовують архітектуру Zen для оптимізації енергоспоживання та теплової продуктивності. Ryzen 5 забезпечують високу <a href="glossary.html#frequency">тактову частоту</a> і покращену пропускну здатність пам`яті, ідеально підходять для ігор, мультимедіа, офісних додатків та програмування, пропонуючи високу продуктивність за доступною ціною.'
     },
     {
         id: 13,
         name: "Intel Core i3-10100",
-        image: "",
-        video: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Intel_Core_i3_%2811th_generation%2C_logo%29.svg/800px-Intel_Core_i3_%2811th_generation%2C_logo%29.svg.png",
+        video: "https://www.youtube.com/embed/tzWv1oS7kQg?si=rK2BZ9lCUmDWkH2C",
         instructionSet: "CISC",
         cores: 4,
         manufacturer: "Intel",
-        frequency: 4.3,
-        description: ""
+        frequency: 3.8,
+        description: 'Процесори Intel сімейства Core i3 — це доступні мікропроцесори, які забезпечують базову продуктивність для повсякденних обчислювальних задач. Вони мають достатню тактову частоту та кількість ядер для виконання типових користувацьких завдань, таких як веб-серфінг, робота з документами, мультимедіа та легкі ігри. Core i3 відзначаються енергоефективністю і стабільністю, що робить їх ідеальним вибором для бюджетних десктопів і ноутбуків, де важливі прийнятна продуктивність і вартість.'
     },
     {
         id: 14,
         name: "AMD Ryzen 3 3300X",
-        image: "",
-        video: "",
+        image: "https://en.wikichip.org/w/images/2/27/amd_ryzen_3_logo.png",
+        video: "https://www.youtube.com/embed/AI8Nk4o1TME?si=2JREpqUyyeTtoxZR",
         instructionSet: "CISC",
         cores: 4,
         manufacturer: "AMD",
-        frequency: 4.3,
-        description: ""
+        frequency: 3.9,
+        description: "Процесори AMD сімейства Ryzen 3 — це доступні мікропроцесори початкового рівня, оптимізовані для базових обчислювальних задач. Вони оснащені чотирма ядрами та підтримують технологію багатопоточності (Simultaneous Multithreading). Використовуючи архітектуру Zen, Ryzen 3 забезпечують добру енергоефективність і достатню продуктивність для щоденних завдань, таких як веб-серфінг, робота з документами, мультимедіа та легкі ігри. Ці процесори ідеально підходять для бюджетних систем, пропонуючи відмінне співвідношення ціни та продуктивності."
     },
     {
         id: 15,
         name: "Intel Core i9-11900KF",
-        image: "",
-        video: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Intel_Core_i9_%2811th_generation%2C_logo%29.svg/800px-Intel_Core_i9_%2811th_generation%2C_logo%29.svg.png",
+        video: "https://www.youtube.com/embed/-WLasmCVDog?si=1D6slCl3LMVmg_8q",
         instructionSet: "CISC",
         cores: 8,
         manufacturer: "Intel",
         frequency: 5.3,
-        description: ""
+        description: 'Процесори Intel сімейства Core i9 являють собою високопродуктивні <a href="glossary.html#cpu">мікропроцесори</a>, оптимізовані для вимогливих обчислювальних задач, характерних для ентузіастів, геймерів та професійних користувачів. Ці процесори, виготовлені за передовими техпроцесами, забезпечують відмінну продуктивність завдяки високій тактовій частоті, великій кількості обчислювальних ядер та підтримці багатопоточності (<a href="glossary.html#hyper-threading">Hyper-Threading</a>). Технології, вбудовані в Core i9, забезпечують підвищену енергоефективність та теплову оптимізацію, що дозволяє використовувати їх у високопродуктивних робочих станціях і геймерських системах.'
     },
     {
         id: 16,
         name: "AMD Ryzen 9 5900",
-        image: "",
-        video: "",
+        image: "https://en.wikichip.org/w/images/thumb/0/01/amd_ryzen_9_logo.png/1014px-amd_ryzen_9_logo.png",
+        video: "https://www.youtube.com/embed/E1oCGpZ1mv0?si=FHmwT8gN0HHAZMnd",
         instructionSet: "CISC",
         cores: 12,
         manufacturer: "AMD",
         frequency: 4.7,
-        description: ""
+        description: 'Процесори AMD сімейства Ryzen 9 — це високопродуктивні мікропроцесори, призначені для ентузіастів, геймерів та професіоналів, які потребують максимальної обчислювальної потужності. Вони мають велику кількість <a href="glossary.html#core">ядер</a> і <a href="glossary.html#thread">потоків</a>, високу <a href="glossary.html#frequency">тактову частоту</a> та підтримують технології багатопоточності та автоматичного розгону (Precision Boost). Ryzen 9 відзначаються видатною продуктивністю у важких завданнях, таких як 3D-рендеринг, відеомонтаж, наукові обчислення та ігри. Завдяки передовим <a href="glossary.html#tprocess">техпроцесам</a> і архітектурі Zen, ці процесори забезпечують ефективне енергоспоживання та теплову оптимізацію, що робить їх ідеальними для високопродуктивних систем.'
     },
     {
         id: 17,
         name: "Intel Core i7-11700KF",
-        image: "",
-        video: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Intel_Core_i7_2020_logo.svg/800px-Intel_Core_i7_2020_logo.svg.png",
+        video: "https://www.youtube.com/embed/rzkYj4zGKMU?si=a4ABYLeRm_1Ho-Cw",
         instructionSet: "CISC",
         cores: 8,
         manufacturer: "Intel",
         frequency: 5.0,
-        description: ""
+        description: 'Процесори Intel <a href="glossary.html#family">сімейства</a> Core i7 — це потужні мікропроцесори, розроблені для високопродуктивних обчислювальних задач. Вони відзначаються високою <a href="glossary.html#frequency">тактовою частотою</a>, великою кількістю ядер та підтримкою технології <a href="glossary.html#hyper-threading">Hyper-Threading</a>, що дозволяє ефективно виконувати багатозадачність. Core i7 ідеально підходять для вимогливих додатків, таких як геймінг, відеомонтаж та 3D-моделювання. Завдяки передовим техпроцесам і оптимізації енергоефективності, ці процесори забезпечують стабільну продуктивність і теплову ефективність для десктопів і ноутбуків.'
     },
     {
         id: 18,
         name: "AMD Ryzen 7 5800",
-        image: "",
-        video: "",
+        image: "https://en.wikichip.org/w/images/4/4e/amd_ryzen_7_logo.png",
+        video: "https://www.youtube.com/embed/_Yrjo4rZgjs?si=IfDZScY0UEBlcCfr",
         instructionSet: "CISC",
         cores: 8,
         manufacturer: "AMD",
         frequency: 4.6,
-        description: ""
+        description: 'Процесори AMD сімейства Ryzen 7 — це потужні <a href="glossary.html#cpu">мікропроцесори</a>, оптимізовані для високопродуктивних завдань. Вони мають велику кількість ядер і потоків, високу <a href="glossary.html#frequency">тактову частоту</a> та підтримку багатопоточності. Ryzen 7 підходять для інтенсивного геймінгу, відеомонтажу, 3D-рендерингу та інших вимогливих додатків. Завдяки ефективній архітектурі Zen, ці процесори забезпечують відмінну продуктивність і енергоефективність для десктопів і ноутбуків.'
     },
     {
         id: 19,
         name: "Intel Core i5-11400F",
-        image: "",
-        video: "",
+        image: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Intel_Core_i5_2020_logo.svg",
+        video: "https://www.youtube.com/embed/ocvEVZFq088?si=Im3eZRMwHgCKCOiC",
         instructionSet: "CISC",
         cores: 6,
         manufacturer: "Intel",
         frequency: 4.4,
-        description: ""
+        description: 'Процесори Intel <a href="glossary.html#family">сімейства</a> Core i5 — це універсальні мікропроцесори, які забезпечують відмінний баланс між продуктивністю та ціною. Вони мають високу <a href="glossary.html#frequency">тактову частоту</a>, оптимальну кількість <a href="glossary.html#core">ядер</a> та підтримують технологію Turbo Boost для динамічного збільшення продуктивності. Core i5 підходять для більшості користувацьких задач, включаючи геймінг, роботу з мультимедіа, офісні програми та легкі обчислювальні завдання. Завдяки своїй енергоефективності та надійності, ці процесори є популярним вибором для десктопів і ноутбуків середнього рівня.'
     },
     {
         id: 20,
         name: "AMD Ryzen 5 3500X",
-        image: "",
-        video: "",
+        image: "https://en.wikichip.org/w/images/a/a0/amd_ryzen_5_logo.png",
+        video: "https://www.youtube.com/embed/NTFHmwJoMT0?si=HddTDZ-LHIpKdkuB",
         instructionSet: "CISC",
         cores: 6,
         manufacturer: "AMD",
         frequency: 4.1,
-        description: ""
+        description: 'Процесори AMD сімейства Ryzen 5 — це універсальні мікропроцесори середнього класу з шістьма або вісьмома <a href="glossary.html#core">ядрами</a> та підтримкою багатопоточності. Вони використовують архітектуру Zen для оптимізації енергоспоживання та теплової продуктивності. Ryzen 5 забезпечують високу <a href="glossary.html#frequency">тактову частоту</a> і покращену пропускну здатність пам`яті, ідеально підходять для ігор, мультимедіа, офісних додатків та програмування, пропонуючи високу продуктивність за доступною ціною.'
+    },
+    {
+        id: 21,
+        name: "Apple M1",
+        image: "https://cdn3.iconfinder.com/data/icons/social-media-logos-glyph/2048/5315_-_Apple-512.png",
+        video: "https://www.youtube.com/embed/KgNNEBJ1FEA?si=yy0C3D7paO3jdDDA",
+        instructionSet: "RISC",
+        cores: 8,
+        manufacturer: "Apple",
+        frequency: 3.2,
+        description: 'Процесори Apple M — це високопродуктивні системи на кристалі (SoC), розроблені спеціально для пристроїв Apple. Вони базуються на архітектурі ARM і включають потужні обчислювальні <a href="glossary.html#core">ядра</a>, графічні <a href="glossary.html#cpu">процесори</a> та спеціалізовані нейронні двигуни. Apple M забезпечують високу продуктивність та енергоефективність, що робить їх ідеальними для широкого спектра завдань, від професійного відеомонтажу та 3D-рендерингу до мобільних ігор та машинного навчання. Інтеграція компонентів в одній системі дозволяє досягти відмінної оптимізації та продуктивності для пристроїв MacBook, iMac та iPad.'
+    },
+    {
+        id: 22,
+        name: "Apple A14 Bionic",
+        image: "https://cdn3.iconfinder.com/data/icons/social-media-logos-glyph/2048/5315_-_Apple-512.png",
+        video: "https://www.youtube.com/embed/52kttRfA_VQ?si=jaR9Jefzeai62Lii",
+        instructionSet: "RISC",
+        cores: 6,
+        manufacturer: "Apple",
+        frequency: 3.1,
+        description: 'Процесори Apple A — це високопродуктивні мобільні чіпи, розроблені для пристроїв iPhone та iPad. Вони базуються на архітектурі ARM і включають потужні обчислювальні <a href="glossary.html#core">ядра</a>, графічні <a href="glossary.html#cpu">процесори</a> та спеціалізовані нейронні двигуни для машинного навчання. Apple A забезпечують високу продуктивність і енергоефективність, що дозволяє виконувати вимогливі завдання, такі як фотографія, відео, ігри та доповнена реальність. Інтеграція компонентів в одній системі на кристалі (SoC) дозволяє досягти виняткової оптимізації та продуктивності для мобільних пристроїв Apple.'
+    },
+    {
+        id: 23,
+        name: "Apple M1 Pro",
+        image: "https://cdn3.iconfinder.com/data/icons/social-media-logos-glyph/2048/5315_-_Apple-512.png",
+        video: "https://www.youtube.com/embed/KgNNEBJ1FEA?si=yy0C3D7paO3jdDDA",
+        instructionSet: "RISC",
+        cores: 10,
+        manufacturer: "Apple",
+        frequency: 3.2,
+        description: 'Процесори Apple M — це високопродуктивні системи на кристалі (SoC), розроблені спеціально для пристроїв Apple. Вони базуються на архітектурі ARM і включають потужні обчислювальні <a href="glossary.html#core">ядра</a>, графічні <a href="glossary.html#cpu">процесори</a> та спеціалізовані нейронні двигуни. Apple M забезпечують високу продуктивність та енергоефективність, що робить їх ідеальними для широкого спектра завдань, від професійного відеомонтажу та 3D-рендерингу до мобільних ігор та машинного навчання. Інтеграція компонентів в одній системі дозволяє досягти відмінної оптимізації та продуктивності для пристроїв MacBook, iMac та iPad.'
+    },
+    {
+        id: 24,
+        name: "Apple M1 Max",
+        image: "https://cdn3.iconfinder.com/data/icons/social-media-logos-glyph/2048/5315_-_Apple-512.png",
+        video: "https://www.youtube.com/embed/KgNNEBJ1FEA?si=yy0C3D7paO3jdDDA",
+        instructionSet: "RISC",
+        cores: 10,
+        manufacturer: "Apple",
+        frequency: 3.2,
+        description: 'Процесори Apple M — це високопродуктивні системи на кристалі (SoC), розроблені спеціально для пристроїв Apple. Вони базуються на архітектурі ARM і включають потужні обчислювальні <a href="glossary.html#core">ядра</a>, графічні <a href="glossary.html#cpu">процесори</a> та спеціалізовані нейронні двигуни. Apple M забезпечують високу продуктивність та енергоефективність, що робить їх ідеальними для широкого спектра завдань, від професійного відеомонтажу та 3D-рендерингу до мобільних ігор та машинного навчання. Інтеграція компонентів в одній системі дозволяє досягти відмінної оптимізації та продуктивності для пристроїв MacBook, iMac та iPad.'
+    },
+    {
+        id: 25,
+        name: "Apple A15 Bionic",
+        image: "https://cdn3.iconfinder.com/data/icons/social-media-logos-glyph/2048/5315_-_Apple-512.png",
+        video: "https://www.youtube.com/embed/52kttRfA_VQ?si=jaR9Jefzeai62Lii",
+        instructionSet: "RISC",
+        cores: 6,
+        manufacturer: "Apple",
+        frequency: 3.23,
+        description: 'Процесори Apple A — це високопродуктивні мобільні чіпи, розроблені для пристроїв iPhone та iPad. Вони базуються на архітектурі ARM і включають потужні обчислювальні <a href="glossary.html#core">ядра</a>, графічні <a href="glossary.html#cpu">процесори</a> та спеціалізовані нейронні двигуни для машинного навчання. Apple A забезпечують високу продуктивність і енергоефективність, що дозволяє виконувати вимогливі завдання, такі як фотографія, відео, ігри та доповнена реальність. Інтеграція компонентів в одній системі на кристалі (SoC) дозволяє досягти виняткової оптимізації та продуктивності для мобільних пристроїв Apple.'
+    },
+    {
+        id: 26,
+        name: "MediaTek Dimensity 1200",
+        image: "https://cdn.icon-icons.com/icons2/3912/PNG/512/mediatek_logo_icon_247752.png",
+        video: "https://www.youtube.com/embed/dkWgfIaPTnw?si=EBqrOEIMxD2-hX1W",
+        instructionSet: "RISC",
+        cores: 8,
+        manufacturer: "MediaTek",
+        frequency: 3.0,
+        description: 'Процесори MediaTek — це високоефективні мобільні чіпи, призначені для смартфонів, планшетів та інших мобільних пристроїв. Вони використовують архітектуру ARM і включають багатоядерні обчислювальні блоки, графічні <a href="glossary.html#cpu">процесори</a> та спеціалізовані модулі для штучного інтелекту. MediaTek забезпечують збалансовану продуктивність та енергоефективність, підтримуючи сучасні технології, такі як 5G, AI-обробка та поліпшена графіка. Завдяки конкурентоспроможним характеристикам та доступній вартості, процесори MediaTek широко застосовуються у різноманітних мобільних пристроях, від бюджетних до високопродуктивних моделей.'
+    },
+    {
+        id: 27,
+        name: "MediaTek Helio G95",
+        image: "https://cdn.icon-icons.com/icons2/3912/PNG/512/mediatek_logo_icon_247752.png",
+        video: "https://www.youtube.com/embed/dkWgfIaPTnw?si=EBqrOEIMxD2-hX1W",
+        instructionSet: "RISC",
+        cores: 8,
+        manufacturer: "MediaTek",
+        frequency: 1.95,
+        description: 'Процесори MediaTek — це високоефективні мобільні чіпи, призначені для смартфонів, планшетів та інших мобільних пристроїв. Вони використовують архітектуру ARM і включають багатоядерні обчислювальні блоки, графічні <a href="glossary.html#cpu">процесори</a> та спеціалізовані модулі для штучного інтелекту. MediaTek забезпечують збалансовану продуктивність та енергоефективність, підтримуючи сучасні технології, такі як 5G, AI-обробка та поліпшена графіка. Завдяки конкурентоспроможним характеристикам та доступній вартості, процесори MediaTek широко застосовуються у різноманітних мобільних пристроях, від бюджетних до високопродуктивних моделей.'
+    },
+    {
+        id: 28,
+        name: "MediaTek Dimensity 900",
+        image: "https://cdn.icon-icons.com/icons2/3912/PNG/512/mediatek_logo_icon_247752.png",
+        video: "https://www.youtube.com/embed/dkWgfIaPTnw?si=EBqrOEIMxD2-hX1W",
+        instructionSet: "RISC",
+        cores: 8,
+        manufacturer: "MediaTek",
+        frequency: 2.4,
+        description: 'Процесори MediaTek — це високоефективні мобільні чіпи, призначені для смартфонів, планшетів та інших мобільних пристроїв. Вони використовують архітектуру ARM і включають багатоядерні обчислювальні блоки, графічні <a href="glossary.html#cpu">процесори</a> та спеціалізовані модулі для штучного інтелекту. MediaTek забезпечують збалансовану продуктивність та енергоефективність, підтримуючи сучасні технології, такі як 5G, AI-обробка та поліпшена графіка. Завдяки конкурентоспроможним характеристикам та доступній вартості, процесори MediaTek широко застосовуються у різноманітних мобільних пристроях, від бюджетних до високопродуктивних моделей.'
+    },
+    {
+        id: 29,
+        name: "MediaTek Helio P95",
+        image: "https://cdn.icon-icons.com/icons2/3912/PNG/512/mediatek_logo_icon_247752.png",
+        video: "https://www.youtube.com/embed/dkWgfIaPTnw?si=EBqrOEIMxD2-hX1W",
+        instructionSet: "RISC",
+        cores: 8,
+        manufacturer: "MediaTek",
+        frequency: 2.2,
+        description: 'Процесори MediaTek — це високоефективні мобільні чіпи, призначені для смартфонів, планшетів та інших мобільних пристроїв. Вони використовують архітектуру ARM і включають багатоядерні обчислювальні блоки, графічні <a href="glossary.html#cpu">процесори</a> та спеціалізовані модулі для штучного інтелекту. MediaTek забезпечують збалансовану продуктивність та енергоефективність, підтримуючи сучасні технології, такі як 5G, AI-обробка та поліпшена графіка. Завдяки конкурентоспроможним характеристикам та доступній вартості, процесори MediaTek широко застосовуються у різноманітних мобільних пристроях, від бюджетних до високопродуктивних моделей.'
+    },
+    {
+        id: 30,
+        name: "MediaTek Dimensity 1000+",
+        image: "https://cdn.icon-icons.com/icons2/3912/PNG/512/mediatek_logo_icon_247752.png",
+        video: "https://www.youtube.com/embed/dkWgfIaPTnw?si=EBqrOEIMxD2-hX1W",
+        instructionSet: "RISC",
+        cores: 8,
+        manufacturer: "MediaTek",
+        frequency: 2.6,
+        description: 'Процесори MediaTek — це високоефективні мобільні чіпи, призначені для смартфонів, планшетів та інших мобільних пристроїв. Вони використовують архітектуру ARM і включають багатоядерні обчислювальні блоки, графічні <a href="glossary.html#cpu">процесори</a> та спеціалізовані модулі для штучного інтелекту. MediaTek забезпечують збалансовану продуктивність та енергоефективність, підтримуючи сучасні технології, такі як 5G, AI-обробка та поліпшена графіка. Завдяки конкурентоспроможним характеристикам та доступній вартості, процесори MediaTek широко застосовуються у різноманітних мобільних пристроях, від бюджетних до високопродуктивних моделей.'
     }
 ];
