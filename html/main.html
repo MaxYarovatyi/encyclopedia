@@ -1,89 +1,99 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мультимедійна енциклопедія пристроїв зберігання інформації</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мультимедійна енциклопедія мікропроцесорів</title>
-    <link rel="stylesheet" href="../css/main.css">
-</head>
-
-<body>
-
+  <body>
     <header>
-        <h1>Мультимедійна енциклопедія сучасних мікропроцесорів</h1>
-        <nav class="nav-bar">
-            <ul>
-                <li class="nav-main"><a href="main.html">Головна</a></li>
-                <li class="nav-about"><a href="about.html">Про енциклопедію</a></li>
-                <li class="nav-glossary"><a href="glossary.html">Глосарій</a></li>
-                <li class="nav-literature"><a href="literature.html">Список літератури</a></li>
-            </ul>
-        </nav>
+      <h1>
+        Мультимедійна енциклопедія сучасних пристроїв зберігання інформації
+      </h1>
+      <nav class="nav-bar">
+        <ul>
+          <li class="nav-main"><a href="main.html">Головна</a></li>
+          <li class="nav-about"><a href="about.html">Про енциклопедію</a></li>
+          <li class="nav-glossary"><a href="glossary.html">Глосарій</a></li>
+          <li class="nav-literature">
+            <a href="literature.html">Список літератури</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <div class="content">
+      <div class="filters-wrapper">
+        <div class="filters">
+          <h2>Фільтри</h2>
+          <form id="filter-form">
+            <label for="storageDevice-name">Назва пристрою:</label>
+            <input
+              type="text"
+              id="storageDevice-name"
+              placeholder="Пошук за назвою пристрою "
+            />
 
-        <div class="filters-wrapper">
-            <div class="filters">
-                <h2>Фільтри</h2>
-                <form id="filter-form">
+            <label for="storageDevice-manufacturer">Виробник:</label>
+            <select id="storageDevice-manufacturer">
+              <option value="all">Усі</option>
+              <option value="Western Digital">Western Digital</option>
+              <option value="Seagate">Seagate</option>
+              <option value="Toshiba">Toshiba</option>
+              <option value="HGST">HGST</option>
+              <option value="Samsung">Samsung</option>
+              <option value="Kingston">Kingston</option>
+              <option value="Crucial">Crucial</option>
+              <option value="ADATA">ADATA</option>
+              <option value="SanDisk">SanDisk</option>
+              <option value="Corsair">Corsair</option>
+              <option value="Intel">Intel</option>
+              <option value="Sabrent">Sabrent</option>
+            </select>
 
-                    <label for="processor-name">Назва процесора:</label>
-                    <input type="text" id="processor-name" placeholder="Пошук за назвою процесора">
+            <label for="storageDevice-interface">Інтерфейс:</label>
+            <select id="storageDevice-interface">
+              <option value="all">Усі</option>
+              <option value="SATA III">SATA III</option>
+              <option value="NVMe M.2">NVMe M.2</option>
+              <option value="NVMe PCIe Gen4">NVMe PCIe Gen4</option>
+              <option value="USB 3.0">USB 3.0</option>
+              <option value="USB 3.1">USB 3.1</option>
+            </select>
+            <label for="storageDevice-capacity">Ємність:</label>
+            <select id="storageDevice-capacity">
+              <option value="all">Усі</option>
+              <option value="1TB">1TB</option>
+              <option value="2TB">2TB</option>
+              <option value="4TB">4TB</option>
+              <option value="6TB">6TB</option>
+              <option value="8TB">8TB</option>
+              <option value="10TB">10TB</option>
+              <option value="12TB">12TB</option>
+              <option value="14TB">14TB</option>
+              <option value="16TB">16TB</option>
+              <option value="500GB">500GB</option>
+              <option value="512GB">512GB</option>
+              <option value="64GB">64GB</option>
+              <option value="128GB">128GB</option>
+              <option value="256GB">256GB</option>
+            </select>
 
-                    <label for="manufacturer">Виробник:</label>
-                    <select id="manufacturer">
-                        <option value="all">Усі</option>
-                        <option value="Intel">Intel</option>
-                        <option value="AMD">AMD</option>
-                        <option value="Apple">Apple</option>
-                        <option value="MediaTek">MediaTek</option>
-                    </select>
-
-                    <label for="instruction-set">Набір команд:</label>
-                    <select id="instruction-set">
-                        <option value="all">Усі</option>
-                        <option value="CISC">CISC</option>
-                        <option value="RISC">RISC</option>
-                    </select>
-
-                    <label for="cores">Мінімальна кількість ядер:</label>
-                    <select id="cores">
-                        <option value="all">Усі</option>
-                        <option value="2">1</option>
-                        <option value="2">2</option>
-                        <option value="4">4</option>
-                        <option value="8">8</option>
-                        <option value="16">16</option>
-                    </select>
-
-                    <label for="frequency">Тактова частота:</label>
-                    <select id="frequency">
-                        <option value="all">Усі</option>
-                        <option value="1">до 1 ГГц</option>
-                        <option value="2">до 2 ГГц</option>
-                        <option value="3">до 3 ГГц</option>
-                        <option value="4">до 4 ГГц</option>
-                        <option value="5">до 5 ГГц</option>
-                        <option value="6">до 6 ГГц</option>
-                    </select>
-
-                    <button type="button" id="filter-button">Фільтрувати</button>
-                    <a href="main.html" id="restore-filters">Скинути фільтри</a>
-                </form>
-            </div>
+            <button type="button" id="filter-button">Фільтрувати</button>
+            <a href="main1.html" id="restore-filters">Скинути фільтри</a>
+          </form>
         </div>
+      </div>
 
-        <div class="main-content-wrapper">
-            <div class="main-content">
-                <div class="processors-list">
-                    
-                </div>
-            </div>
+      <div class="main-content-wrapper">
+        <div class="main-content">
+          <div class="storageDevices-list"></div>
         </div>
+      </div>
     </div>
     <script src="../js/data.js"></script>
     <script src="../js/scripts.js"></script>
-</body>
+  </body>
 </html>

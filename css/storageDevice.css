@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/*=====================================HEADER=====================================*/
+
+header {
+    background: #ddd;
+    color: #333;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    font-size: 24px;
+    padding: 20px;
+}
+
+.nav-bar {
+    background: #222;
+    padding: 10px;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.55), 0 5px 10px rgba(0, 0, 0, 0.55);
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar ul li {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.nav-main, .nav-bar ul li:hover {
+    background-color: #555;
+}
+
+.nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/*==================================================================================*/
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    bottom: 0;
+}
+.content {
+    display: flex;
+}
+
+.image-block {
+    margin-right: 10px;
+}
+
+#storageDevice-image {
+    width: 400px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    height: auto;
+}
+
+.description-block {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#storageDevice-name {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.detailed-description {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 20px;
+    min-height: 321px;
+}
+
+.storageDevice-video {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.storageDevice-video iframe {
+    width: 100%;
+    height: 472px;
+    border-radius: 15px;
+}
+
+#back-to-list {
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#back-to-list:hover {
+    background-color: #555;
+}
